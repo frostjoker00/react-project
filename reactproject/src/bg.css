@@ -29,3 +29,20 @@
   color: white;
   text-align: center;
 }
+
+@media (min-width: 700px) and (max-width: 700px) {
+  #root
+    > div.video-background-container
+    > div
+    > div
+    > div
+    > div:nth-child(2)
+    > div
+    > button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 700px; /* Adjust width as needed */
+  }
+}
