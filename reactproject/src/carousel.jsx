@@ -5,11 +5,10 @@ import vid3 from "./assets/carousel/3.mp4";
 
 function VideoCarousel() {
   useEffect(() => {
-    // Bootstrap 5 carousel initialization (ensure auto sliding every 5 seconds)
     const carouselElement = document.getElementById("videoCarousel");
     const carousel = new window.bootstrap.Carousel(carouselElement, {
-      interval: 5000, // 5000ms = 5 seconds
-      ride: "carousel", // Enable auto slide
+      interval: 5000,
+      ride: "carousel",
     });
   }, []);
 
@@ -22,19 +21,18 @@ function VideoCarousel() {
       style={{ maxWidth: "60%", margin: "auto", paddingTop: "40px" }}
     >
       <div className="carousel-inner">
-        {/* Video 1 */}
         <div className="carousel-item active">
           <video className="rounded d-block w-100" autoPlay muted loop>
             <source src={vid1} type="video/mp4" />
           </video>
         </div>
-        {/* Video 2 */}
+
         <div className="carousel-item">
           <video className="rounded d-block w-100" autoPlay muted loop>
             <source src={vid2} type="video/mp4" />
           </video>
         </div>
-        {/* Video 3 */}
+
         <div className="carousel-item">
           <video className="rounded d-block w-100" autoPlay muted loop>
             <source src={vid3} type="video/mp4" />
@@ -42,7 +40,6 @@ function VideoCarousel() {
         </div>
       </div>
 
-      {/* Carousel Controls */}
       <button
         className="carousel-control-prev"
         type="button"

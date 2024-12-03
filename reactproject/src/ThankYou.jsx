@@ -14,7 +14,6 @@ const ThankYou = () => {
       <h2>Thank You for Your Purchase!</h2>
       <p>We appreciate your order and will process it shortly.</p>
 
-      {/* Display Product Information */}
       <div className="mt-4">
         <h3>You've purchased:</h3>
         <img

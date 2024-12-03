@@ -1,18 +1,16 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom"; // For navigation
+import { useNavigate } from "react-router-dom";
 
-// Product images
 import gamingMouseImage from "./assets/product/mouse.jpg";
 import gamingKeyboardImage from "./assets/product/keyboard.jpg";
 import gpuImage from "./assets/product/gpu.jpg";
 import headsetImage from "./assets/product/headset.jpg";
 import laptopImage from "./assets/product/laptop.jpg";
-import monitorImage from "./assets/product/monitor.jpg"; // Ensure these images exist
+import monitorImage from "./assets/product/monitor.jpg";
 
 const Product = () => {
-  const navigate = useNavigate(); // Initialize navigate for routing
+  const navigate = useNavigate();
 
-  // Product data
   const products = [
     { id: 1, name: "Gaming Mouse", image: gamingMouseImage, price: "$40" },
     {
@@ -27,29 +25,26 @@ const Product = () => {
     { id: 6, name: "Laptop", image: laptopImage, price: "$1200" },
   ];
 
-  // State to manage the quantity of each product
   const [quantities, setQuantities] = useState(
     products.reduce((acc, product) => {
-      acc[product.id] = 1; // Start with 1 for each product
+      acc[product.id] = 1;
       return acc;
     }, {})
   );
 
-  // Handle the change in quantity (increase or decrease)
   const handleQuantityChange = (id, operation) => {
     setQuantities((prevQuantities) => {
       const newQuantity =
         operation === "+"
           ? prevQuantities[id] + 1
-          : Math.max(1, prevQuantities[id] - 1); // Ensure quantity doesn't go below 1
+          : Math.max(1, prevQuantities[id] - 1);
       return { ...prevQuantities, [id]: newQuantity };
     });
   };
 
-  // Handle "Buy Now" click
   const handleBuyNow = (product) => {
     navigate("/thank-you", {
-      state: { product }, // Pass product data to Thank You page
+      state: { product },
     });
   };
 
@@ -70,7 +65,6 @@ const Product = () => {
                 <h5 className="card-title">{product.name}</h5>
                 <p className="card-text">{product.price}</p>
 
-                {/* Quantity Selection */}
                 <div className="d-flex align-items-center">
                   <button
                     className="btn btn-outline-secondary custom-button"
@@ -88,11 +82,10 @@ const Product = () => {
                   </button>
                 </div>
 
-                {/* Buy Now Button */}
                 <button
                   className="btn btn-secondary custom-button mt-3"
                   disabled={quantities[product.id] === 0}
-                  onClick={() => handleBuyNow(product)} // Pass product as argument
+                  onClick={() => handleBuyNow(product)}
                 >
                   Buy Now
                 </button>

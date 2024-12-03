@@ -32,7 +32,6 @@ function Hero() {
                 PC.
               </p>
               <div className="d-grid gap-2 d-md-flex justify-content-md-start">
-                {/* Button style updated to solid color */}
                 <button
                   type="button"
                   className="btn btn-secondary btn-lg px-4 me-md-2"
