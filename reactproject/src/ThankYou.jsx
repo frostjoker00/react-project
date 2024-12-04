@@ -2,8 +2,8 @@ import React from "react";
 import { useLocation } from "react-router-dom";
 
 const ThankYou = () => {
-  const location = useLocation(); // Use location to get the passed state
-  const { product } = location.state || {}; // Destructure product from state
+  const location = useLocation(); 
+  const { product } = location.state || {}; 
 
   if (!product) {
     return <div>Product data not found!</div>;

@@ -8,7 +8,6 @@ function Login() {
     >
       <div className="w-100" style={{ maxWidth: "400px" }}>
         {" "}
-        {/* Restrict form width */}
         <h2 className="mb-4 text-center">Login</h2>
         <form>
           <div className="mb-3">
