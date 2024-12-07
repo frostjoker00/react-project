@@ -11,7 +11,9 @@ import ThankYou from "./ThankYou";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/react-project">
+      {" "}
+      {/* Set basename here */}
       <Navbar />
       <Routes>
         <Route
@@ -26,7 +28,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/products" element={<Product />} />
         <Route path="/about" element={<About />} />
-        <Route path="/thank-you" element={<ThankYou />} />{" "}
+        <Route path="/thank-you" element={<ThankYou />} />
       </Routes>
       <Footer />
     </Router>
