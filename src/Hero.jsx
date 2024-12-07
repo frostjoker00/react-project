@@ -33,10 +33,7 @@ function Hero() {
                 PC.
               </p>
               <div className="d-grid gap-2 d-md-flex justify-content-md-center">
-                <Link
-                  to="/products"
-                  className="btn btn-secondary btn-lg px-4 py-2 text-decoration-none text-white"
-                >
+                <Link to="/products" className="btn btn-secondary btn-lg">
                   Products
                 </Link>
               </div>
