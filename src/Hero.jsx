@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"; // Import the Link component
 import "./bg.css";
 import heroImage from "./assets/carousel/hero.png";
 import backgroundVideo from "./assets/bg.mp4";
@@ -36,12 +37,12 @@ function Hero() {
                   type="button"
                   className="btn btn-secondary btn-lg px-4 me-md-2"
                 >
-                  <a
-                    href="/products"
+                  <Link
+                    to="/products" // Replace <a> with <Link> for client-side routing
                     className="text-decoration-none text-white"
                   >
                     Products
-                  </a>
+                  </Link>
                 </button>
               </div>
             </div>
