@@ -13,7 +13,7 @@ function App() {
   return (
     <Router basename="/react-project">
       {" "}
-      {/* Set basename here */}
+      
       <Navbar />
       <Routes>
         <Route

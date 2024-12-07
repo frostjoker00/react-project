@@ -34,7 +34,7 @@ function Hero() {
               </p>
               <div className="d-grid gap-2 d-md-flex justify-content-md-start">
                 <Link
-                  to="/products" // Use Link directly for routing
+                  to="/products"
                   className="btn btn-secondary btn-lg px-4 me-md-2 text-decoration-none text-white"
                 >
                   Products
