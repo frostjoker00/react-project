@@ -33,17 +33,12 @@ function Hero() {
                 PC.
               </p>
               <div className="d-grid gap-2 d-md-flex justify-content-md-start">
-                <button
-                  type="button"
-                  className="btn btn-secondary btn-lg px-4 me-md-2"
+                <Link
+                  to="/products" // Use Link directly for routing
+                  className="btn btn-secondary btn-lg px-4 me-md-2 text-decoration-none text-white"
                 >
-                  <Link
-                    to="/products" // Replace <a> with <Link> for client-side routing
-                    className="text-decoration-none text-white"
-                  >
-                    Products
-                  </Link>
-                </button>
+                  Products
+                </Link>
               </div>
             </div>
           </div>
