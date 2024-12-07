@@ -32,10 +32,10 @@ function Hero() {
                 GPUs, RAM, and CPUs — everything you need to build your ultimate
                 PC.
               </p>
-              <div className="d-grid gap-2 d-md-flex justify-content-md-start">
+              <div className="d-grid gap-2 d-md-flex justify-content-md-center">
                 <Link
                   to="/products"
-                  className="btn btn-secondary btn-lg px-4 me-md-2 text-decoration-none text-white"
+                  className="btn btn-secondary btn-lg px-4 py-2 text-decoration-none text-white"
                 >
                   Products
                 </Link>
