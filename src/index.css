@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background: linear-gradient(to right, #000000, #2a2929);
+}
+
+.navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #bba1a1;
+}
+
+.navbar-toggler-icon {
+  background-color: #565150;
+  border-radius: 2px;
+  padding: 8px;
+}
+.navbar-brand {
+  color: white;
+  font-family: "Rubik Mono One", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+.hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+body {
+  background: linear-gradient(to right, #000000, #2a2929);
+}
+
+footer {
+  margin-top: auto;
+}
+
+.lead {
+  color: white;
+}
+
+.title {
+  color: white;
+}
+
+.navbar-brand:hover {
+  text-decoration: none;
+  color: inherit;
+}
+h2 {
+  color: white;
+}
