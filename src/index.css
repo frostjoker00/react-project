@@ -57,14 +57,14 @@ h2 {
   color: white;
 }
 
+/* Default button size (for mobile and small screens) */
 .btn-secondary {
-  display: block;
-  width: 100%;
-  padding: 15px 30px;
-  font-size: 18px;
+  display: inline-block;
+  padding: 12px 24px; /* Larger padding for mobile */
+  font-size: 16px; /* Larger font size for mobile */
   font-weight: bold;
   text-align: center;
-  border-radius: 5px;
+  border-radius: 5px; /* Rounded corners */
   background-color: #2a2929;
   color: white;
   border: none;
@@ -72,13 +72,23 @@ h2 {
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
+/* Hover effect */
 .btn-secondary:hover {
-  background-color: #686565;
+  background-color: #858585;
   color: #2a2929;
   transform: scale(1.05);
 }
 
+/* Focus effect */
 .btn-secondary:focus {
   outline: none;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+/* Smaller button on larger screens (PC) */
+@media (min-width: 992px) {
+  .btn-secondary {
+    padding: 8px 16px; /* Smaller padding for desktop */
+    font-size: 25px; /* Smaller font size for desktop */
+  }
 }
